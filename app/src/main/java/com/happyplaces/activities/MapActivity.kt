@@ -27,8 +27,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
 
         if (mHappyPlaceDetail != null){
             setSupportActionBar(toolbar_map)
-            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-            supportActionBar!!.title = mHappyPlaceDetail!!.title
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.title = mHappyPlaceDetail?.title
 
             toolbar_map.setNavigationOnClickListener {
                 onBackPressed()

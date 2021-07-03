@@ -21,8 +21,8 @@ class HappyPlaceDetailActivity : AppCompatActivity() {
 
         if (happyPlaceDetailMode != null){
             setSupportActionBar(toolbar_happy_place_detail)
-            supportActionBar!!.setDisplayHomeAsUpEnabled(true)
-            supportActionBar!!.title = happyPlaceDetailMode.title
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+            supportActionBar?.title = happyPlaceDetailMode.title
 
             toolbar_happy_place_detail.setNavigationOnClickListener {
                 onBackPressed()

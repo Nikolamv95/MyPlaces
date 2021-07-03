@@ -93,10 +93,10 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
         if (mHappyPlaceDetails != null) {
             supportActionBar?.title = "Edit Happy Place"
 
-            et_title.setText(mHappyPlaceDetails!!.title)
-            et_description.setText(mHappyPlaceDetails!!.description)
-            et_date.setText(mHappyPlaceDetails!!.date)
-            et_location.setText(mHappyPlaceDetails!!.location)
+            et_title.setText(mHappyPlaceDetails?.title)
+            et_description.setText(mHappyPlaceDetails?.description)
+            et_date.setText(mHappyPlaceDetails?.date)
+            et_location.setText(mHappyPlaceDetails?.location)
             mLatitude = mHappyPlaceDetails!!.latitude
             mLongitude = mHappyPlaceDetails!!.longitude
 
@@ -118,7 +118,7 @@ class AddHappyPlaceActivity : AppCompatActivity(), View.OnClickListener {
 
     // Another option to handle click listener instead of typing it in the onCreate method
     override fun onClick(v: View?) {
-        when (v!!.id) {
+        when (v?.id) {
             R.id.et_date -> {
                 // Set the DatePicker with the current date
                 DatePickerDialog(
