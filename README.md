@@ -1,5 +1,5 @@
 # MyPlaces
-App which allows you to store your current location.
+App which allows you to store your favourite places.
 
 ## ℹ️ Table of contents
 * Tech Stack
